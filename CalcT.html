@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="CalcT.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora com Table</title>
+</head>
+<style>
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
+
+<body>
+    
+       <table width="50%"
+       align="center">
+           <tr>
+               <td colspan="5"
+               align="right">
+               <input size="40" readonly value="" style="text-align:right;color: red;" id="displayTela">
+               </input>
+               </td>
+            </tr>
+           <tr>
+               <td colspan="5">
+                   
+               </td>
+           </tr>
+           <tr>
+               <td width="20%" align="center"><button onclick="digitouNumero(7)">7</button></td>
+               <td width="20%" align="center"><button onclick="digitouNumero(8)">8</button></td>
+               <td width="20%" align="center"><button onclick="digitouNumero(9)">9</button></td>
+               <td width="20%" align="center"><button onclick="limparDel()">DEL</button></td>
+               <td width="20%" align="center"><button onclick="limparTudo()">AC</button></td>
+           </tr>
+           <tr>
+            <td align="center"><button onclick="digitouNumero(4)">4</button></td>
+            <td align="center"><button onclick="digitouNumero(5)">5</button></td>
+            <td align="center"><button onclick="digitouNumero(6)">6</button></td>
+            <td align="center"><button onclick="digitouNumero('&times;')">&times;</button></td>
+            <td align="center"><button onclick="digitouNumero('&divide;')">&divide;</button></td>
+           </tr>
+           <tr>
+            <td align="center"><button onclick="digitouNumero(1)">1</button></td>
+            <td align="center"><button onclick="digitouNumero(2)">2</button></td>
+            <td align="center"><button onclick="digitouNumero(3)">3</button></td>
+            <td align="center"><button onclick="digitouNumero('&plus;')">&plus;</button></td>
+            <td align="center"><button onclick="digitouNumero('&minus;')">&minus;</button></td>
+           </tr>
+           <tr>
+            <td align="center"><button onclick="digitouNumero(0)">0</button></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"><button onclick="digitarPonto()">&sdot;</button></td>
+            <td align="center"><button onclick="calcular()">&#8332;</button></td>
+           </tr>
+       </table>
+</body>
+</html>
+
